@@ -1,4 +1,4 @@
-name: Build Writerside docs
+name: 'Build Writerside docs'
 description: 'Build Writerside documentation artifacts'
 author: 'writerside <writerside@jetbrains.com>'
 
