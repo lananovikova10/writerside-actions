@@ -1,16 +1,15 @@
-name: 'Build Writerside docs'
-description: 'Build Writerside documentation artifacts'
-author: 'writerside <writerside@jetbrains.com>'
+name: Build Writerside docs
+description: Build Writerside documentation artifacts
+author: writerside <writerside@jetbrains.com>
 branding:
-    icon: 'book-open'
-    color: 'purple'
-
+  icon: book-open
+  color: purple
 runs:
-  using: "composite"
+  using: composite
   steps:
     - run: |
         set -e
         /opt/builder/bin/idea.sh helpbuilderinspect -source-dir . -product $PRODUCT -output-dir artifacts/ || true
         echo "Test existing of $ARTIFACT artifact"
         test -e artifacts/$ARTIFACT
-    shell: bash
+      shell: bash
