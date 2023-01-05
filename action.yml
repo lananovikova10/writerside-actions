@@ -2,7 +2,6 @@ name: 'Build Writerside docs'
 description: 'Build Writerside documentation artifacts'
 author: 'writerside <writerside@jetbrains.com>'
 
-
 runs:
     using: 'docker'
         image: 'registry.jetbrains.team/p/writerside/builder/writerside-builder:2.1.984'
