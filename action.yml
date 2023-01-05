@@ -6,8 +6,7 @@ branding:
     color: 'purple'
 
 runs:
-    using: 'docker'
-    image: 'registry.jetbrains.team/p/writerside/builder/writerside-builder:2.1.984'
+    using: 'composite'
     steps:
         - run: |
             set -e
