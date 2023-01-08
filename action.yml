@@ -8,4 +8,4 @@ branding:
 runs:
   using: 'docker'
   image: 'docker://registry.jetbrains.team/p/writerside/builder/writerside-builder:2.1.984' 
-  entrypoint: 'build.sh'
+  entrypoint: '/entrypoint.sh'
