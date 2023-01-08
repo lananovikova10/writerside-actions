@@ -1,4 +1,4 @@
-#!/bin/sh -l
+#!/bin/bash
 
 set -e
 /opt/builder/bin/idea.sh helpbuilderinspect -source-dir . --runner github -product $PRODUCT -output-dir artifacts/ || true
