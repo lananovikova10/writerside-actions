@@ -4,12 +4,8 @@ author: writerside <writerside@jetbrains.com>
 branding:
   icon: book-open
   color: purple
+  
 runs:
-  using: composite
-  steps:
-    - run: |
-        set -e
-        /opt/builder/bin/idea.sh helpbuilderinspect -source-dir . -product $PRODUCT -output-dir artifacts/ || true
-        echo "Test existing of $ARTIFACT artifact"
-        test -e artifacts/$ARTIFACT
-      shell: bash
+  using: 'docker'
+  image: 'registry.jetbrains.team/p/writerside/builder/writerside-builder:2.1.984' 
+  entrypoint: 'build.sh'
