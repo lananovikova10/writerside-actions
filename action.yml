@@ -7,5 +7,5 @@ branding:
   
 runs:
   using: 'docker'
-  image: 'registry.jetbrains.team/p/writerside/builder/writerside-builder:2.1.984' 
+  image: 'docker://registry.jetbrains.team/p/writerside/builder/writerside-builder:2.1.984' 
   entrypoint: 'build.sh'
