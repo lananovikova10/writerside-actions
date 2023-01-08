@@ -32,5 +32,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build docs
-        uses: writerside-actions/action@v1.0.0
+      uses: writerside-actions/action@v1.0.5
 ```
