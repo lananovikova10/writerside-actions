@@ -7,7 +7,8 @@ branding:
   
 runs:
   using: 'docker'
-  image: 'docker://registry.jetbrains.team/p/writerside/builder/writerside-builder:2.1.984' 
+  image: 'docker://registry.jetbrains.team/p/writerside/builder/writerside-builder:2.1.984'
+  steps: 
   - run: |  
           set -e
           /opt/builder/bin/idea.sh helpbuilderinspect -source-dir . -product $PRODUCT -output-dir artifacts/ || true
