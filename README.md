@@ -30,7 +30,9 @@ env:
 jobs:
   build-job:
     runs-on: ubuntu-latest
+    container: 
+      image: registry.jetbrains.team/p/writerside/builder/writerside-builder:2.1.984
     steps:
       - name: Build docs
-      uses: writerside-actions/action@v1.0.5
+        uses: lananovikova10/writerside-actions@v2.4
 ```
